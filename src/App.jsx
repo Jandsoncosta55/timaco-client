@@ -5,10 +5,12 @@ import HomePage from "./pages/HomePage/HomePage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import SignupPage from "./pages/SignupPage/SignupPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
+// import TeamPage from "./pages/TeamPage/TeamPage";
 
 import Navbar from "./components/Navbar/Navbar";
 import IsPrivate from "./components/IsPrivate/IsPrivate";
 import IsAnon from "./components/IsAnon/IsAnon";
+import Team from "./components/Team/team";
 
 function App() {
   return (
@@ -44,6 +46,7 @@ function App() {
           }
         />
       </Routes>
+      <Team>team</Team>
     </div>
   );
 }
