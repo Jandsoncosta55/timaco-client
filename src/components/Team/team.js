@@ -20,8 +20,8 @@ const Team = ({ initialValues = { title: '', description: ''}, submitFunc}) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
+    <form className = "formTeam" onSubmit={handleSubmit}>
+      <div >
         <label htmlFor='title'>Title:</label>
         <input type='text' id='title' value={formData.title} onChange={handleInput} />
       </div>

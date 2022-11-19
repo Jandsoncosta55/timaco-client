@@ -24,22 +24,22 @@ class TeamService {
     return this.api.post('/', requestBody);
   }
 
-  // GET /team
+  // GET /team (retorna todos os team)
   getAll = async () => {
-    return this.api.get('/team');
+    return this.api.get('/team/');
   }
 
-  // GET /team/:id
+  // GET /team/:id (retorna um team especifico)
   getOne = async (id) => {
     return this.api.get(`/team/${id}`);
   }
 
-  // PUT /team/:id
+  // PATCH /team/:id (edita um time especifico)
   updateOne = async (id, requestBody) => {
-    return this.api.put(`/team/${id}`, requestBody);
+    return this.api.patch(`/team/${id}`, requestBody);
   }
 
-  // DELETE /team/:id
+  // DELETE /team/:id (deleta um time)
   deleteProject = async (id) => {
     return this.api.delete(`/team/${id}`);
   } 
