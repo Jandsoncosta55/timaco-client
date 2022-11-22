@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import  "./team.css";
+// import teamService from '../../services/team.services';
 
 const Team = ({ initialValues = { title: '', description: ''}, submitFunc}) => {
   const [formData, setFormData] = useState(initialValues);
@@ -29,7 +31,7 @@ const Team = ({ initialValues = { title: '', description: ''}, submitFunc}) => {
         <label htmlFor='description'>Description:</label>
         <input type='text' id='description' value={formData.description} onChange={handleInput} />
       </div>
-      <button type='submit'>Submit</button>
+      <button className= "button" type='submit'>Submit</button>
     </form>
   )
 }

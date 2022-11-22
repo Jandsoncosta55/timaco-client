@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <Link to="/home">
-            <img src="https://s4.aconvert.com/convert/p3r68-cdx67/awkia-sz7kg.jpg" style={{ padding: 5,width: 50, height: 50, borderRadius: 25}} alt="profile" />
+            <img src="https://s3.amazonaws.com/plugcrm-app/5d430b7bf8381400224ccc82/deal_file/637d4f580de24c000c0538c2.jpeg" style={{ padding: 5,width: 50, height: 50, borderRadius: 40}} alt="home" />
           </Link>
       
       <Navbar />

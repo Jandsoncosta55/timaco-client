@@ -10,17 +10,23 @@
     color:white;
 }
 .signUp{
+    cursor:pointer;
     background-color: #388575;
 }
 .login{
     background-color: #388575;
+    cursor:pointer;
 }
 .profile{
     background-color: #388575;
+    cursor:pointer;
 }
 .home{
     background-color: #388575;
+    cursor:pointer;
 }
 .logOut{
     background-color: #388575;
+    cursor:pointer;
+    
 }

@@ -5,10 +5,11 @@ import { Link } from "react-router-dom";
 function ProfilePage() {
   return (
     <div>
-      <Link className= "create" to="/team"><button>Create Team</button></Link>
+      <Link className= "create" to="/team">
+        <button className= "btn">Create Team</button></Link>
                {/* <h1> <Team></Team></h1> */}
     </div>
-  );
+  )
 }
 
 export default ProfilePage;

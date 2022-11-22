@@ -5,3 +5,7 @@
     flex-direction: column;
     align-items: center;
 }
+.btn{
+    background-color: #388575;
+    cursor:pointer;
+}
