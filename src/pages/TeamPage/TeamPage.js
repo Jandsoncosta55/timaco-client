@@ -6,7 +6,7 @@ import AddTeam from "../../components/AddTeam/AddTeam";
 function TeamPage() {
   return (
     <div>
-      <AddTeam/>
+      <AddTeam />
     </div>
   );
 }
@@ -35,7 +35,7 @@ export default TeamPage;
 //     const requestBody = { title, descriptions };
 
 //     // Send a request to the server using axios
-//     /* 
+//     /*
 //     axios.post(`${process.env.REACT_APP_SERVER_URL}/auth/`)
 //       .then((response) => {})
 //     */

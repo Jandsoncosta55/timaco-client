@@ -1,11 +1,9 @@
-.formTeam{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.formTeam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.button{
-    background-color: #388575;
-    cursor:pointer;
+.button {
+  background-color: #388575;
+  cursor: pointer;
 }
-
-    

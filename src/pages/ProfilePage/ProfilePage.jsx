@@ -9,8 +9,8 @@ function ProfilePage() {
       <Link className="create" to="/">
         <button className="btn">Create Team</button>
       </Link>
-      <AddTeam/>
-      <TeamList/>
+      <AddTeam />
+      <TeamList />
     </div>
   );
 }
