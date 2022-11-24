@@ -49,7 +49,7 @@ function App() {
             </IsAnon>
           }
         />
-        <Route path="/team" element={<TeamPage />} />
+        <Route path="/create" element={<TeamPage />} />
       </Routes>
     </div>
   );

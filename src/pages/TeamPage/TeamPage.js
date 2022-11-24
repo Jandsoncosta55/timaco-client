@@ -1,11 +1,12 @@
 import "./TeamPage.css";
-import Team from "../../components/Team/team"
+// import Team from "../../components/Team/team"
+import AddTeam from "../../components/AddTeam/AddTeam";
 // import teamService from "../../services/team.services"
 
 function TeamPage() {
   return (
     <div>
-      <Team/>
+      <AddTeam/>
     </div>
   );
 }

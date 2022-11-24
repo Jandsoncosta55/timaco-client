@@ -1,14 +1,16 @@
 // import Team from "../../components/Team/team"
 import "./ProfilePage.css";
 import { Link } from "react-router-dom";
-
+import AddTeam from "../../components/AddTeam/AddTeam";
+import TeamList from "../../components/TeamList";
 function ProfilePage() {
   return (
     <div>
-      <Link className="create" to="/team">
+      <Link className="create" to="/">
         <button className="btn">Create Team</button>
       </Link>
-      {/* <h1> <Team></Team></h1> */}
+      <AddTeam/>
+      <TeamList/>
     </div>
   );
 }

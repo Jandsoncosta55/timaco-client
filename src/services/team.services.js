@@ -3,7 +3,7 @@ import axios from 'axios';
 class TeamService {
   constructor() {
     this.api = axios.create({
-      baseURL: process.env.REACT_APP_SERVER_URL || "http://localhost:5005"
+  baseURL: `${process.env.REACT_APP_SERVER_URL}/team` || "http://localhost:5005/team"
     });
 
     // Automatically set JWT token in the headers for every request
@@ -26,22 +26,22 @@ class TeamService {
 
   // GET /team (retorna todos os team)
   getAll = async () => {
-    return this.api.get('/team/');
+    return this.api.get('/');
   }
 
   // GET /team/:id (retorna um team especifico)
   getOne = async (id) => {
-    return this.api.get(`/team/${id}`);
+    return this.api.get(`/${id}`);
   }
 
   // PATCH /team/:id (edita um time especifico)
   updateOne = async (id, requestBody) => {
-    return this.api.patch(`/team/${id}`, requestBody);
+    return this.api.patch(`/${id}`, requestBody);
   }
 
   // DELETE /team/:id (deleta um time)
   deleteProject = async (id) => {
-    return this.api.delete(`/team/${id}`);
+    return this.api.delete(`/${id}`);
   } 
 
 
