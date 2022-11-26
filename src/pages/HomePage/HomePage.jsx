@@ -6,7 +6,7 @@ function HomePage() {
       <h1>TIMACO</h1>
       <br />
       <p> Descrição do site:</p>
-      <div>
+      <div className= "container">
         {" "}
         <br />
         <img
