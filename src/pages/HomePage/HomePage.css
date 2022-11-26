@@ -1,11 +1,5 @@
 .container {
   display: flex;
-  box-shadow: inset 0px 0px 30px 0px rgb(101 67 33 / 50%);
-  width: 50%;
-  min-height: 50vh;
-  
-  margin-left: 15%;
-  margin-right: 15%;
   flex-wrap: wrap;
   flex-direction: column;
 }
