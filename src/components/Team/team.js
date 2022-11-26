@@ -1,46 +1,3 @@
-// import { useState } from 'react';
-// import  "./team.css";
-// import { Link } from "react-router-dom";
-// // import teamService from '../../services/team.services';
-
-// const Team = ({ initialValues = { title: '', description: ''}, submitFunc}) => {
-//   const [formData, setFormData] = useState(initialValues);
-
-//   const handleInput = (e) => {
-//     const { id, value } = e.target;
-
-//     const newValues = {
-//       ...formData,
-//       [id]: value
-//     }
-//     setFormData(newValues)
-//   }
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     submitFunc(formData);
-//     setFormData(initialValues);
-//   }
-
-//   return (
-//     <form className = "formTeam" onSubmit={handleSubmit}>
-//       <div >
-//       <Link className= "create" to="/">
-//         <button className= "btn">Create Team</button></Link>
-//         <label htmlFor='title'>Title:</label>
-//         <input type='text' id='title' value={formData.title} onChange={handleInput} />
-//       </div>
-//       <div>
-//         <label htmlFor='description'>Description:</label>
-//         <input type='text' id='description' value={formData.description} onChange={handleInput} />
-//       </div>
-//       <button className= "button" type='submit'>Submit</button>
-//     </form>
-//   )
-// }
-
-// export default Team;
-
 import "./team.css";
 import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
@@ -63,25 +20,14 @@ function Team() {
     e.preventDefault();
     const requestBody = { title, descriptions };
 
-    // Send a request to the server using axios
-    /* 
-    axios.post(`${process.env.REACT_APP_SERVER_URL}/auth/`)
-      .then((response) => {})
-    */
-
-    // Or using a service
     teamService
       .create0ne(requestBody)
       .then((response) => {
-        // If the POST request is successful store the authentication token,
-        // after the token is stored authenticate the user
-        // and at last navigate to the home page
         storeToken(response.data.authToken);
         authenticateUser();
         navigate("/");
       })
       .catch((error) => {
-        // If the request resolves with an error, set the error message in the state
         const errorDescription = error.response.data.message;
         setErrorMessage(errorDescription);
       });
