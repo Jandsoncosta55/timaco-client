@@ -1,5 +1,6 @@
 import playersService from "../../services/players.services"
 import { useState } from "react";
+import PlayerList from "../PlayerList/PlayerList";
 
 function AddPlayer(props) {
   const [name, setname] = useState("");
@@ -34,6 +35,7 @@ function AddPlayer(props) {
         />
         <button type="submit">Add a Players</button>
       </form>
+      <PlayerList/>
     </div>
   );
 }
