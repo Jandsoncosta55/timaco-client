@@ -19,7 +19,7 @@ function HomePage() {
       </div>
       <div>
 <h1>About Me</h1>
-Eu me chamo Jandson Costa, e criei este site com pois gosto muito de esportes, e jogos
+Eu me chamo Jandson Costa, e criei este site pois gosto muito de esportes, e jogos
 , espero poder ajudar com a criação dos seus times!
       </div>
     </div>
