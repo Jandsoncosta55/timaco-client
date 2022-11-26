@@ -1,11 +1,12 @@
 import "./TeamPage.css";
+import TeamList from "../../components/TeamList";
 
-import AddTeam from "../../components/AddTeam/AddTeam";
 
 function TeamPage() {
   return (
     <div>
-      <AddTeam />
+      
+      <TeamList />
     </div>
   );
 }

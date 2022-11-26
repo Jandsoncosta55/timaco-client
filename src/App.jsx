@@ -15,7 +15,7 @@ import IsAnon from "./components/IsAnon/IsAnon";
 function App() {
   return (
     <div className="App">
-      <Link to="/home">
+      <Link to="/">
         <img
           src="https://s3.amazonaws.com/plugcrm-app/5d430b7bf8381400224ccc82/deal_file/637d4f580de24c000c0538c2.jpeg"
           style={{ padding: 5, width: 50, height: 50, borderRadius: 40 }}
@@ -53,7 +53,7 @@ function App() {
             </IsAnon>
           }
         />
-        <Route path="/create" element={<TeamPage />} />
+        <Route path="/team" element={<TeamPage />} />
       </Routes>
     </div>
   );
